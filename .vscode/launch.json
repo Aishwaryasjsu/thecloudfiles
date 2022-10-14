@@ -1,0 +1,37 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Backend",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\backend\\index.js",
+            "serverReadyAction": {
+                "pattern": "listening on port (3001)",
+                "uriFormat": "http://localhost:3001",
+                "action": "openExternally"
+              }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Frontend",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\frontend\\src\\index.js",
+            "serverReadyAction": {
+                "pattern": "listening on port (3000)",
+                "uriFormat": "http://localhost:3000",
+                "action": "openExternally"
+              }
+        }
+    ]
+}
