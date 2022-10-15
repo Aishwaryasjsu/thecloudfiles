@@ -20,13 +20,7 @@ aws.config.update({
 
 })
 
-// aws.config.update({
-//     secretAccessKey: "9t6O5qVXxIeelVbN8kJmZzL/WId2vnQRrm5cVsFl",
-//     accessKeyId: "AKIAXS4LOUO2JWSGNAWO",
-//     region: "us-west-1"
-    
 
-// })
 
 s3 = new aws.S3();
  const Bucket=process.env.Bucket;
